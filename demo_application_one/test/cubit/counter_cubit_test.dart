@@ -18,12 +18,12 @@ void main() {
     });
 
     blocTest<CounterCubit, CounterState>("counter should be increment by 1", 
-    build: () => counterCubit!!,
+    build: () => counterCubit!,
     act:(cubit) => counterCubit?.increament(),
     expect:() => [CounterState(counterValue: 1)]);
 
  blocTest<CounterCubit, CounterState>("counter should be increment by 1", 
-    build: () => counterCubit!!,
+    build: () => counterCubit!,
     act:(cubit) => counterCubit?.decreament(),
     expect:() => [CounterState(counterValue: -1)]);
 
